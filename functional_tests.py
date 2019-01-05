@@ -12,7 +12,7 @@ class NewVisitTest(unittest.TestCase):
 
     def test_can_start_a_list_and_retrieve_it_later(self):
         # 首先，需要访问TO-DO首页
-        self.browser.get("http://172.16.1.61:8080")
+        self.browser.get("http://192.168.159.133:8080")
 
         # 查看网站标题中是否包含"TO-DO"
         self.assertIn("TO-DO",self.browser.title)
