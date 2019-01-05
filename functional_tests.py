@@ -29,6 +29,8 @@ class NewVisitTest(unittest.TestCase):
         # 他按了回车键，页面进行了刷新
         inputbox.send_keys(Keys.ENTER)
 
+        # import time
+        # time.sleep(5)
         # 页面刷新，显示一个表格
         table = self.browser.find_element_by_id("id_list_table")
         rows = table.find_elements_by_tag_name("tr")

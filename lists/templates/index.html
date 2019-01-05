@@ -6,7 +6,11 @@
 </head>
 <body>
 <h1>TO-DO</h1>
-<input type="text" id="id_new_item" placeholder="请添加待办事项">
+<form method="post">
+    {% csrf_token %}
+    <input type="text" id="id_new_item" placeholder="请添加待办事项">
+</form>
+
 <table id="id_list_table">
     
 </table>
